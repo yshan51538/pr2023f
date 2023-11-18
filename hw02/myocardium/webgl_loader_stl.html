@@ -63,11 +63,10 @@
 
 				plane.receiveShadow = true;
 
-const loader = new STLLoader();
-                loader.load( ‘./stl/binary/111C51538.stl', function ( geometry ) {
-
-                    const material = new THREE.MeshPhongMaterial( { color: 0xff9c7c, specular: 0x494949, shininess: 200 } );
-                    const mesh = new THREE.Mesh( geometry, material );
+				const loader = new STLLoader();
+				loader.load( ‘./stl/binary/111C51538.stl', function ( geometry ) {
+					const material = new THREE.MeshPhongMaterial( { color: 0xff9c7c, specular: 0x494949, shininess: 200 } );
+				const mesh = new THREE.Mesh( geometry, material );
 
                     mesh.scale.set( 0.005,0.005,0.005);
                     mesh.position.set(0,0.7,0.5);
